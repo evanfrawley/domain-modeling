@@ -12,6 +12,9 @@ class PersonTests: XCTestCase {
 
   func testPerson() {
     let ted = Person(firstName: "Ted", lastName: "Neward", age: 45)
+    print("")
+    print(ted.toString())
+    print("")
     XCTAssert(ted.toString() == "[Person: firstName:Ted lastName:Neward age:45 job:nil spouse:nil]")
   }
   
