@@ -192,7 +192,6 @@ public class Family {
         var total = 0
         for index in 0 ... members.count - 1 {
             let person = members[index]
-            print(person.toString())
             if person.job != nil {
                 total = total + person.job!.calculateIncome(2000)
             }
